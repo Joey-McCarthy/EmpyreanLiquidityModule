@@ -1,0 +1,134 @@
+<!--<p>
+  {{ this.Title }}
+</p>
+<div id="table" *ngIf="Inputitem">
+    <table>
+	<thead>
+		<th>StartDate</th>
+		<th>ScenarioNum</th>
+		<th>AvgFace</th>
+		<th>AvgYield</th> 
+		<th>Eopface</th>
+		<th>MktVal</th>
+		<th>FairVal</th>
+		<th>IntAccr</th>
+		<th>Eopbook</th>
+		<th>AvgBook</th>
+		<th>IntCf</th>
+		<th>MatuCf</th>
+		<th>AmortCf</th>
+		<th>PrinCf</th>
+		<th>PrepayCf</th>
+		<th>PrepayMtm</th>
+		<th>Dpamort</th>
+		<th>EopaccrNpint</th>
+		<th>MarginalFace</th>
+		<th>MarginalCoupon</th>
+		<th>CmpdIntAcctFlow</th>
+		<th>GainLossCf</th>
+		<th>RealizedGainLoss</th>
+		<th>FvoprInc</th>
+		<th>Fvocinc</th>
+		<th>FvgainLoss</th>
+		<th>ForecastVols</th>
+		<th>NetCf</th>
+		<th>AvgCfday</th>
+		<th>AvgMgday</th>
+		<th>Eoprate</th>
+		<th>PrinCfrate</th>
+		<th>PrepayCfrate</th>
+		<th>Rpface</th>
+		<th>RpfromRate</th>
+		<th>RptoRate</th>
+		<th>CreditLoss</th>
+		<th>CreditRecovery</th>
+		<th>CreditDefInt</th>
+		<th>CreditDefRate</th>
+		<th>CreditLossRate</th>
+		<th>XferRate</th>
+		<th>XferSpread</th>
+		<th>XferMargin</th>
+		<th>XferDrCr</th>
+		<th>Rwa</th>
+		<th>Duration</th>
+		<th>Convexity</th>
+		<th>Notional</th>
+		<th>Bstarget</th>
+		<th>SpreadAdj</th>
+		<th>ChgId</th>
+		<th>MarginalDiscPrem</th>
+		<th>XferRateMg</th>
+		<th>XferSpreadMg</th>
+		<th>Wal</th>
+		<th>IntIncExp</th>
+		<th>Smm</th>
+		<th>EntityNum</th>
+	</thead>
+	  <tr *ngFor="let x of Inputitem">
+		<td>{{ x.Start_Date }}</td>
+		<td>{{ x.ScenarioNum }}</td>
+		<td>{{ x.AvgFace }}</td>
+		<td>{{ x.AvgYield }}</td> 
+		<td>{{ x.Eopface }}</td>
+		<td>{{ x.MktVal }}</td>
+		<td>{{ x.FairVal }}</td>
+		<td>{{ x.IntAccr }}</td>
+		<td>{{ x.Eopbook }}</td>
+		<td>{{ x.AvgBook }}</td>
+		<td>{{ x.IntCf }}</td>
+		<td>{{ x.MatuCf }}</td>
+		<td>{{ x.AmortCf }}</td>
+		<td>{{ x.PrinCf }}</td>
+		<td>{{ x.PrepayCf }}</td>
+		<td>{{ x.PrepayMtm }}</td>
+		<td>{{ x.Dpamort }}</td>
+		<td>{{ x.EopaccrNpint }}</td>
+		<td>{{ x.MarginalFace }}</td>
+		<td>{{ x.MarginalCoupon }}</td>
+		<td>{{ x.CmpdIntAcctFlow }}</td>
+		<td>{{ x.GainLossCf }}</td>
+		<td>{{ x.RealizedGainLoss }}</td>
+		<td>{{ x.FvoprInc }}</td>
+		<td>{{ x.Fvocinc }}</td>
+		<td>{{ x.FvgainLoss }}</td>
+		<td>{{ x.ForecastVols }}</td>
+		<td>{{ x.NetCf }}</td>
+		<td>{{ x.AvgCfday }}</td>
+		<td>{{ x.AvgMgday }}</td>
+		<td>{{ x.Eoprate }}</td>
+		<td>{{ x.PrinCfrate }}</td>
+		<td>{{ x.PrepayCfrate }}</td>
+		<td>{{ x.Rpface }}</td>
+		<td>{{ x.RpfromRate }}</td>
+		<td>{{ x.RptoRate }}</td>
+		<td>{{ x.CreditLoss }}</td>
+		<td>{{ x.CreditRecovery }}</td>
+		<td>{{ x.CreditDefInt }}</td>
+		<td>{{ x.CreditDefRate }}</td>
+		<td>{{ x.CreditLossRate }}</td>
+		<td>{{ x.XferRate }}</td>
+		<td>{{ x.XferSpread }}</td>
+		<td>{{ x.XferMargin }}</td>
+		<td>{{ x.XferDrCr }}</td>
+		<td>{{ x.Rwa }}</td>
+		<td>{{ x.Duration }}</td>
+		<td>{{ x.Convexity }}</td>
+		<td>{{ x.Notional }}</td>
+		<td>{{ x.Bstarget }}</td>
+		<td>{{ x.SpreadAdj }}</td>
+		<td>{{ x.ChgId }}</td>
+		<td>{{ x.MarginalDiscPrem }}</td>
+		<td>{{ x.XferRateMg }}</td>
+		<td>{{ x.XferSpreadMg }}</td>
+		<td>{{ x.Wal }}</td>
+		<td>{{ x.IntIncExp }}</td>
+		<td>{{ x.Smm }}</td>
+		<td>{{ x.EntityNum }}</td>
+	  </tr>
+	</table>
+</div>
+
+-->
+<gc-spread-sheets  [hostStyle]="hostStyle" (workbookInitialized)="workbookInit($event)">
+
+</gc-spread-sheets>

@@ -1,0 +1,28 @@
+<div class="row">
+	
+	<div class="small-3 columns">
+		<h3>Scenarios</h3><select (change)="setScenarioNum($event.target.value)">
+        <option value="0" selected="selected">Latest</option>
+		<option value="3000">Liquidity Stress Testing - Baseline</option>
+		<option value="4000">IRR/ALM - Growth Balance Sheet</option>
+		<option value="6000">IRR/ALM - Budget</option>
+		<option value="3005">Bank Specific - Moderate</option>
+		<option value="3105">Market Specific - Severe</option>
+		<option value="3005">Bank Specific - Moderate</option>
+		<option value="2010">DFAST Severly Adverse</option>
+		<option value="1725">Shock: Parallel Up500Bps - Flat</option>
+		<option value="4125">Shock: Parallel Up400Bps</option>
+    </select>
+	<br><h3>Accounts</h3>
+		
+		<ol *ngIf="account">
+			<li *ngFor="let acct of account" (click)="onSelect(acct)">{{acct.Name}}</li>
+			
+		</ol>
+
+	</div>
+	<div class="small-9 columns">
+		<app-detailitem [Inputitem]="containeritem"></app-detailitem>
+	</div>
+</div>
+
